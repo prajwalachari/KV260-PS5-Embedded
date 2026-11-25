@@ -1,0 +1,10 @@
+[Unit]
+Description=Fixed IP and DHCP for the direct laptop link
+After=NetworkManager.service
+
+[Service]
+ExecStart=/usr/local/bin/pcb-ip.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

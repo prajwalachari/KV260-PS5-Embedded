@@ -1,0 +1,4 @@
+# On the KV260. pynq, pynq_dpu, VART and XRT come from Kria-PYNQ (https://github.com/Xilinx/Kria-PYNQ),
+# installed into /etc/profile.d/pynq_venv.sh. Training needs are in training/requirements.txt.
+numpy
+opencv-python

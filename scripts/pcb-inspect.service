@@ -1,0 +1,11 @@
+[Unit]
+Description=PCB inspection station (camera + DPU, web page on port 8080)
+After=network-online.target dfx-mgr.service
+
+[Service]
+ExecStartPre=/bin/sleep 20
+ExecStart=/opt/pcb-defect-kv260/kv260_app/run.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
